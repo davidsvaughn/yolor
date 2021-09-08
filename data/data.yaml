@@ -1,0 +1,15 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: /home/product/dvaughn/code/yolor/data/train.txt
+val: /home/product/dvaughn/code/yolor/data/val.txt
+test: /home/product/dvaughn/code/yolor/data/test.txt
+
+# number of classes
+nc: 22
+
+# class names
+names: ['Automatic Lateral Switch', 'Concrete Pole', 'Connection', 'Fault Current Indicator',
+        'Hot Line Connection', 'Steel Crossarm', 'Mushroom Insulator', 'Fuse Switch Polymer',
+        'Polymer Dead-end Insulator', 'Polymer Insulator', 'Porcelain Dead-end Insulator',
+        'Porcelain Insulator', 'Raptor Guard', 'Riser Shield', 'Compression Splice', 'Stirrup',
+        'Surge Arrester', 'Transformer', 'Wood Crossarm', 'Wood Pole', 'Fuse Switch Porcelain',
+        'Jiffy Splice']
