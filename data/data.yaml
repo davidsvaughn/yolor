@@ -1,7 +1,8 @@
 # train and val datasets (image directory or *.txt file with image paths)
 train: /home/product/dvaughn/code/yolor/data/train.txt
-val: /home/product/dvaughn/code/yolor/data/val.txt
 test: /home/product/dvaughn/code/yolor/data/test.txt
+# val: /home/product/dvaughn/code/yolor/data/val.txt
+val: /home/product/dvaughn/code/yolor/data/test.txt
 
 # number of classes
 nc: 22

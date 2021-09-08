@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Current File",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        // "envFile": "${workspaceFolder}/.env",
+
+        // train.py
+        "args": [
+          "--batch-size", "1",
+          "--img-size", "1984",
+          "--data", "data.yaml",
+          "--cfg", "cfg/yolor_p6.cfg",
+          "--weights", "",
+          "--device", "0",
+          "--epochs", "100",
+          "--name", "yolor_p6",
+          "--hyp", "hyp.scratch.1280.yaml",
+        ],
+
+        // detect.py - FPL Component
+        // "args": [
+        //   "--iou-thres", "0.25", "--conf-thres", "0.25",
+        //   "--weights", "/home/product/dvaughn/data/fpl/component/models/latest/weights.pt", "--img-size", "3008",
+        //   "--source", "/home/product/dvaughn/data/fpl/damage/rgb/resnet/data/test/images",
+        //   "--project", "/home/product/dvaughn/data/fpl/component/models/latest/detect",
+        //   "--name", "run",
+        //   "--save-txt", "--save-conf", "--save-crop",
+        //   "--poly-porc", "/home/product/dvaughn/data/fpl/fpl_models/rgb_damage/resnet",
+        // ],
+  
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Python: Current File",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "envFile": "${workspaceFolder}/.env",
+        "args": ["-u", "-m", "strace", "-t"],
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  
