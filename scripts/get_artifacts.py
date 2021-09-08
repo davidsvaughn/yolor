@@ -19,8 +19,8 @@ It will arrange the files in the same structure as 'training_start.py' script in
 ''' Set the following 3 file paths appropriately.... This example is for FPL Thermal Damage... '''
 
 ## FPL RGB Component - july8
-DATA_DIR        = '/home/product/dvaughn/data/fpl/component/tmp'
-MODEL_DIR       = '/home/product/dvaughn/data/fpl/component/models/latest/tmp'
+DATA_DIR        = '~/yolor/data'
+MODEL_DIR       = '~/yolor/data'
 MODEL_BUCKET    = 's3://ai-inference-dev-model-catalog/model/yolo-v5-full-scale/fpl-comp-1408-3008-yolov5l6-july12/'
 
 
